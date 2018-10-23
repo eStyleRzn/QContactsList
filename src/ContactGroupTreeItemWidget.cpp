@@ -1,7 +1,5 @@
 #include "ContactGroupTreeItemWidget.h"
 
-#include <QDebug>
-
 #include "ui_ContactGroupTreeItemWidget.h"
 
 //======================================================================================================================
@@ -22,8 +20,10 @@ ContactGroupTreeItemWidget::~ContactGroupTreeItemWidget()
 //----------------------------------------------------------------------------------------------------------------------
 void ContactGroupTreeItemWidget::setExpanded(bool v)
 {
-    auto pic = v ? QPixmap(":/images/arrow-up.svg") : QPixmap(":/images/arrow-down.svg");
-    wt_->btnExpand->setPixmap(pic);
+  wt_->btnExpand->setProperty("expanded", v);
+  style()->unpolish(wt_->btnExpand);
+  style()->polish(wt_->btnExpand);
+  update();
 }
 
 //----------------------------------------------------------------------------------------------------------------------

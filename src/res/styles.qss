@@ -12,16 +12,15 @@ ContactGroupTreeItemWidget #btnExpand
   max-width: 16px;
 }
 
-/*
-ContactGroupTreeItemWidget[expanded=false] #btnExpand
+ContactGroupTreeItemWidget #btnExpand[expanded=true]
+{
+  image: url(":/images/arrow-up.svg");
+}
+
+ContactGroupTreeItemWidget #btnExpand[expanded=false]
 {
   image: url(":/images/arrow-down.svg");
 }
-
-ContactGroupTreeItemWidget[expanded=true] #btnExpand
-{
-  image: url(":/images/arrow-up.svg");
-} */
 
 ContactTreeItemWidget
 {
@@ -30,5 +29,3 @@ ContactTreeItemWidget
   border: 2px solid red;
   border-radius: 8px;
 }
-
-
