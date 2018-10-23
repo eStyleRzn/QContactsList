@@ -1,0 +1,34 @@
+ContactGroupTreeItemWidget
+{
+  background-color : cyan;
+  font-weight : bold;
+  border: 2px solid green;
+  border-radius: 4px;
+}
+
+ContactGroupTreeItemWidget #btnExpand
+{
+  min-width: 16px;
+  max-width: 16px;
+}
+
+/*
+ContactGroupTreeItemWidget[expanded=false] #btnExpand
+{
+  image: url(":/images/arrow-down.svg");
+}
+
+ContactGroupTreeItemWidget[expanded=true] #btnExpand
+{
+  image: url(":/images/arrow-up.svg");
+} */
+
+ContactTreeItemWidget
+{
+  background-color : yellow;
+  font-style : italic;
+  border: 2px solid red;
+  border-radius: 8px;
+}
+
+

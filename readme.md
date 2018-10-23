@@ -1,0 +1,1 @@
+Set $$PWD/tmp as output directory in QT Creator's build settings page
