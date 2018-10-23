@@ -34,10 +34,10 @@ void ContactItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
   else // This is for contact group item
   {
     groupWidget_.setCaption(index.data().toString());
-    bool isExpanded = QStyle::State_Open & option.state;
+    const bool isExpanded = QStyle::State_Open & option.state;
     groupWidget_.setExpanded(isExpanded);
 
-    qDebug() << __FUNCTION__ << " " << index  << " " << isExpanded;
+//    qDebug() << __FUNCTION__ << " " << index  << " " << isExpanded;
 
     painter->save();
     painter->translate(option.rect.topLeft());

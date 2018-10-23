@@ -13,7 +13,6 @@ class ContactGroupTreeItemWidget : public QFrame
 {
   using _Base = QFrame;
   Q_OBJECT
-  Q_PROPERTY(bool expanded MEMBER expanded_)
 public:
   ContactGroupTreeItemWidget(QWidget* parent = nullptr);
   virtual ~ContactGroupTreeItemWidget();
@@ -28,7 +27,6 @@ private:
   ContactGroupTreeItemWidget& operator=(const ContactGroupTreeItemWidget&) = delete;
 
   Ui::ContactGroupTreeItemWidget* wt_ = nullptr;
-  bool expanded_ = false;
 };
 
 #endif // CONTACTGROUPTREEITEMWIDGET_H
